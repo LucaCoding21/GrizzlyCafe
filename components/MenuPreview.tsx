@@ -31,12 +31,9 @@ const MenuPreview: React.FC = () => {
                   <p className="text-grizzly-dark font-bold text-xs sm:text-sm">{item.price}</p>
                 </div>
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2 text-grizzly-dark group-hover:text-grizzly-red transition-colors leading-tight">
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold text-grizzly-dark group-hover:text-grizzly-red transition-colors leading-tight">
                 {item.name}
               </h3>
-              <p className="text-gray-500 text-xs sm:text-sm leading-relaxed line-clamp-2 sm:line-clamp-none">
-                {item.description}
-              </p>
             </div>
           ))}
         </div>

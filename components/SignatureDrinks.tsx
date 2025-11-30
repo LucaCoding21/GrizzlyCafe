@@ -23,26 +23,13 @@ const SignatureDrinks: React.FC = () => {
                   alt={drink.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                {drink.seasonal && (
-                   <div className="absolute top-2 right-2 sm:top-4 sm:right-4 bg-grizzly-red text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 rounded-full uppercase tracking-wider shadow-lg">
-                      Limited Time
-                   </div>
-                )}
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-serif font-bold mb-2 text-white group-hover:text-grizzly-red transition-colors">{drink.name}</h3>
-              <p className="text-grizzly-red font-medium italic mb-3 sm:mb-4 text-sm sm:text-base">{drink.tagline}</p>
+              <p className="text-amber-400 font-medium italic mb-3 sm:mb-4 text-sm sm:text-base">{drink.tastingNotes.join(' · ')}</p>
               <p className="text-gray-400 leading-relaxed max-w-sm mb-5 sm:mb-6 text-sm sm:text-base px-2">
                 {drink.description}
               </p>
-
-              <div className="flex flex-wrap justify-center gap-2">
-                 {drink.tastingNotes.map((note, idx) => (
-                    <span key={idx} className="px-2 sm:px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] sm:text-xs text-gray-300 uppercase tracking-wide">
-                       {note}
-                    </span>
-                 ))}
-              </div>
             </div>
           ))}
         </div>

@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     { name: 'Signatures', href: '#signatures' },
     { name: 'Menu', href: '#menu' },
     { name: 'Gallery', href: '#gallery' },
-    { name: 'Visit', href: '#location' },
+    { name: 'Location', href: '#location' },
   ];
 
   return (

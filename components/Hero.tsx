@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       <div className="relative z-10 text-center px-6 sm:px-4 max-w-5xl mx-auto mt-8 sm:mt-16">
         <div className="animate-fade-in-up">
           <div className="inline-flex items-center gap-2 mb-4 sm:mb-6 px-3 sm:px-4 py-1 rounded-full border border-white/20 bg-white/5 backdrop-blur-sm">
-             <span className="w-2 h-2 rounded-full bg-grizzly-red animate-pulse"></span>
+             <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
              <span className="text-white/80 text-[10px] sm:text-xs font-bold tracking-widest uppercase">Now Open in Surrey, BC</span>
           </div>
 
@@ -33,17 +33,17 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
             <a
-              href="#location"
+              href="#signatures"
               className="group relative w-full sm:w-auto px-8 py-4 bg-grizzly-red text-white font-bold rounded-full overflow-hidden transition-all hover:scale-105 hover:shadow-2xl hover:shadow-red-900/50 text-center"
             >
-              <span className="relative z-10">Visit the Den</span>
+              <span className="relative z-10">Explore Menu</span>
               <div className="absolute inset-0 bg-red-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
             </a>
             <a
-              href="#signatures"
+              href="#location"
               className="text-white font-bold tracking-widest uppercase text-sm hover:text-grizzly-red transition-colors border-b border-transparent hover:border-grizzly-red pb-1"
             >
-              Explore Menu
+              Visit the Den
             </a>
           </div>
         </div>
