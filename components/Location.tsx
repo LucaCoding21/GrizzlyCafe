@@ -61,12 +61,16 @@ const Location: React.FC = () => {
                   <h3 className="font-bold text-lg sm:text-xl text-grizzly-dark mb-2 sm:mb-3">Hours</h3>
                   <ul className="text-gray-600 space-y-2 text-sm sm:text-base">
                     <li className="flex justify-between border-b border-gray-200 pb-1 border-dashed gap-2">
-                       <span className="font-medium">Mon - Fri</span>
-                       <span className="text-right">7:00 AM - 7:00 PM</span>
+                       <span className="font-medium">Mon - Thu</span>
+                       <span className="text-right">9:00 AM - 7:00 PM</span>
                     </li>
                     <li className="flex justify-between border-b border-gray-200 pb-1 border-dashed gap-2">
-                       <span className="font-medium">Sat & Sun</span>
-                       <span className="text-right">8:00 AM - 6:00 PM</span>
+                       <span className="font-medium">Fri - Sat</span>
+                       <span className="text-right">9:00 AM - 10:00 PM</span>
+                    </li>
+                    <li className="flex justify-between border-b border-gray-200 pb-1 border-dashed gap-2">
+                       <span className="font-medium">Sunday</span>
+                       <span className="text-right">9:00 AM - 7:00 PM</span>
                     </li>
                   </ul>
                 </div>
