@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                 <span className="font-serif font-bold text-xl sm:text-2xl">{BRAND_NAME}</span>
             </div>
             <p className="text-gray-400 max-w-md text-sm sm:text-base mx-auto sm:mx-0">
-              A modern sanctuary for coffee lovers in Surrey. We brew with passion, serve with a smile, and roast with a wild spirit.
+              More than a cafe. A gathering place for friends and family. Fresh pastries baked daily, exceptional coffee, and a community that feels like home.
             </p>
           </div>
 

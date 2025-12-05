@@ -26,10 +26,11 @@ const Location: React.FC = () => {
         <div className="lg:w-1/2 bg-grizzly-gray flex items-center p-6 sm:p-8 md:p-16 lg:p-24">
           <div className="w-full max-w-lg mx-auto lg:mx-0">
             <div className="mb-6 sm:mb-10">
-               <span className="text-grizzly-red font-bold tracking-widest uppercase text-xs sm:text-sm block mb-2">Visit Us</span>
+               <span className="text-grizzly-red font-bold tracking-widest uppercase text-xs sm:text-sm block mb-2">Join Our Community</span>
                <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-grizzly-dark">
-                 Come Say Hello.
+                 Your Table Awaits.
                </h2>
+               <p className="text-gray-600 mt-3 text-base sm:text-lg">Pull up a chair, meet a neighbor, and stay awhile. Everyone's welcome here.</p>
             </div>
 
             <div className="space-y-6 sm:space-y-10">

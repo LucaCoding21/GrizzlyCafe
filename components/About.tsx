@@ -1,5 +1,7 @@
 import React from 'react';
 import { FEATURES } from '../constants';
+import space2 from '../images/space2.jpg';
+import pastries from '../images/pastries.jpg';
 
 const About: React.FC = () => {
   return (
@@ -16,20 +18,20 @@ const About: React.FC = () => {
           <div className="order-2 lg:order-1">
             <div className="flex items-center gap-3 mb-4 sm:mb-6">
                <div className="h-[2px] w-8 sm:w-12 bg-grizzly-red"></div>
-               <span className="text-grizzly-dark font-bold tracking-widest uppercase text-xs sm:text-sm">About the Cafe</span>
+               <span className="text-grizzly-dark font-bold tracking-widest uppercase text-xs sm:text-sm">Our Story</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-serif font-bold text-grizzly-dark mb-6 sm:mb-8 leading-tight">
-              An Ode to the <br/>
-              <span className="text-grizzly-red">Pacific Northwest.</span>
+              Where Community <br/>
+              <span className="text-grizzly-red">Comes Together.</span>
             </h2>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Grizzly Café wasn't just built to serve coffee; it was designed to capture the essence of British Columbia. From the locally sourced hemlock timber lining our walls to the ethically sourced beans roasted right here in Surrey, every detail whispers the story of the wild.
+              Grizzly Café is more than just a place to grab coffee. It's a neighborhood hub where friends reconnect, families gather, and strangers become regulars. Our cozy booths and communal tables were designed with one thing in mind: bringing people together over great food and drinks.
             </p>
 
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10">
-               We believe coffee should be an experience, not a transaction. Whether you're a digital nomad seeking a power outlet and inspiration, or a neighbor catching up over a pastry, our den is your sanctuary.
+               Every pastry, every treat, every bite is made fresh right here in our kitchen. From flaky croissants to decadent baklava, our bakers arrive before dawn to ensure you're greeted with the warm aroma of freshly baked goods. This is your third place. Where you belong.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 border-t border-grizzly-dark/10 pt-6 sm:pt-8">
@@ -51,14 +53,14 @@ const About: React.FC = () => {
           <div className="order-1 lg:order-2 relative mb-8 lg:mb-0">
             <div className="relative z-10">
                 <img
-                  src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?q=80&w=800&auto=format&fit=crop"
-                  alt="Barista pouring art"
+                  src={space2}
+                  alt="Cozy seating nooks at Grizzly Cafe"
                   className="w-full sm:w-4/5 rounded-2xl shadow-2xl sm:ml-auto"
                 />
-                <div className="absolute -bottom-6 sm:-bottom-10 left-0 w-2/5 sm:w-3/5 border-4 sm:border-8 border-grizzly-cream rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl">
+                <div className="absolute -bottom-8 sm:-bottom-14 left-0 w-3/5 sm:w-4/5 border-4 sm:border-8 border-grizzly-cream rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl">
                     <img
-                      src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=800&auto=format&fit=crop"
-                      alt="Beans"
+                      src={pastries}
+                      alt="Fresh baked pastries made in-house"
                       className="w-full h-full object-cover"
                     />
                 </div>

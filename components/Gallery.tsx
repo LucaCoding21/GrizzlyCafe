@@ -1,13 +1,19 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
+import space1 from '../images/space1.jpg';
+import space2 from '../images/space2.jpg';
+import space3 from '../images/space3.jpg';
+import food1 from '../images/food1.jpg';
+import food2 from '../images/food2.jpg';
+import pastries from '../images/pastries.jpg';
 
 const images = [
-  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop", // Cafe interior light
-  "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop", // People sitting
-  "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop", // Coffee cups
-  "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&auto=format&fit=crop", // Latte Art
-  "https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=800&auto=format&fit=crop", // Barista
-  "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=800&auto=format&fit=crop", // Pastry case
+  { src: space1, alt: "Grizzly Cafe counter and ordering area" },
+  { src: space2, alt: "Cozy booth seating with natural light" },
+  { src: space3, alt: "Fresh pastry display case" },
+  { src: food1, alt: "House-made bird's nest pastries" },
+  { src: food2, alt: "Fresh baklava and pastries" },
+  { src: pastries, alt: "Daily selection of fresh-baked treats" },
 ];
 
 const Gallery: React.FC = () => {
@@ -26,11 +32,11 @@ const Gallery: React.FC = () => {
 
       {/* Mobile-optimized Grid */}
       <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-1 sm:gap-0">
-        {images.map((src, index) => (
+        {images.map((image, index) => (
           <div key={index} className="relative aspect-square group overflow-hidden sm:border-2 sm:border-white">
             <img
-              src={src}
-              alt={`Gallery image ${index + 1}`}
+              src={image.src}
+              alt={image.alt}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-grizzly-red/80 opacity-0 group-hover:opacity-100 active:opacity-100 transition-opacity duration-300 flex items-center justify-center">

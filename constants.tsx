@@ -9,18 +9,18 @@ export const PHONE = "+1 (604) 555-0199";
 
 export const FEATURES: Feature[] = [
   {
-    title: "Artisan Roasts",
-    description: "Ethically sourced beans roasted to perfection right here in the Pacific Northwest.",
+    title: "Fresh Baked Daily",
+    description: "Every pastry, croissant, and treat is made from scratch in our kitchen each morning.",
+    icon: <Award className="w-6 h-6" />,
+  },
+  {
+    title: "Community First",
+    description: "Cozy booths and communal tables designed for friends and family to gather.",
     icon: <Coffee className="w-6 h-6" />,
   },
   {
-    title: "Digital Nomads",
-    description: "Free gigabit WiFi and individual power stations for every seat.",
-    icon: <Wifi className="w-6 h-6" />,
-  },
-  {
-    title: "Locally Sourced",
-    description: "Our pastries and lunch items use ingredients from local BC farms.",
+    title: "Your Third Place",
+    description: "More than a cafe. A welcoming space where everyone belongs.",
     icon: <Leaf className="w-6 h-6" />,
   },
 ];
@@ -49,31 +49,31 @@ export const SIGNATURE_DRINKS: SignatureDrink[] = [
 export const MENU_HIGHLIGHTS: MenuItem[] = [
   {
     id: 1,
-    name: "Smoked Salmon Bagel",
-    description: "Wild BC salmon, capers, dill cream cheese on a house-made sourdough bagel.",
+    name: "House-Made Baklava",
+    description: "Layers of flaky phyllo, honey, and pistachios. Baked fresh in our kitchen daily.",
     image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?w=1000&auto=format&fit=crop",
-    price: "$12.00"
-  },
-  {
-    id: 2,
-    name: "Grizzly Cold Brew",
-    description: "Steeped for 24 hours. Bold, smooth, and served over mountain-clear ice.",
-    image: "https://images.unsplash.com/photo-1517959105821-eaf2591984ca?w=1000&auto=format&fit=crop",
-    price: "$5.75"
-  },
-  {
-    id: 3,
-    name: "Forest Berry Scone",
-    description: "Baked fresh daily with seasonal berries and a lemon glaze.",
-    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1000&auto=format&fit=crop",
     price: "$4.50"
   },
   {
+    id: 2,
+    name: "Almond Croissant",
+    description: "Buttery, flaky perfection filled with almond cream, baked fresh each morning.",
+    image: "https://images.unsplash.com/photo-1517959105821-eaf2591984ca?w=1000&auto=format&fit=crop",
+    price: "$5.25"
+  },
+  {
+    id: 3,
+    name: "Pistachio Latte",
+    description: "Our signature espresso with house-made pistachio cream and a hint of rose.",
+    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1000&auto=format&fit=crop",
+    price: "$6.45"
+  },
+  {
     id: 4,
-    name: "Avocado & Egg Toast",
-    description: "Thick cut sourdough, smashed avocado, chili flakes, and a poached farm egg.",
+    name: "Fresh Baked Muffins",
+    description: "Rotating flavors daily. Chocolate, blueberry, and more. Always warm, always fresh.",
     image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1000&auto=format&fit=crop",
-    price: "$11.50"
+    price: "$4.00"
   }
 ];
 
@@ -81,13 +81,13 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
     name: "Sarah Jenkins",
-    text: "The aesthetic is unmatched in Surrey. I come here to work every Tuesday. The Great Bear Latte is a must-try!",
-    role: "Freelance Designer"
+    text: "This isn't just a cafe. It's where our family spends Sunday mornings. The kids love the pastries and we love the community feel.",
+    role: "Local Mom"
   },
   {
     id: 2,
     name: "David Chen",
-    text: "Finally, a place that takes coffee seriously. The espresso pull is consistent and the staff are incredibly friendly.",
-    role: "Coffee Enthusiast"
+    text: "I've made more friends here than anywhere else in Surrey. The baklava is incredible and you can tell everything is made fresh.",
+    role: "Regular Customer"
   }
 ];
